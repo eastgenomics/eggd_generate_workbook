@@ -82,7 +82,7 @@ This app may be executed as a standalone app.
 
 `--merge_vcfs` (`bool`): Determines if to merge multiple VCFs to one sheet (default: `False`).
 
-`--summary` (`string`): If to include summary sheet, specify key of assay. Currently supports `dias` and `helios`.
+`--summary` (`string`): If to include summary sheet, specify key of assay. Currently supports `dias`, `helios` and `uranus`.
 
 `--human_filter` (`string`): String to add to summary sheet with humanly readable form of the given filter string. No checking is done of this matching the actual filter(s) used.
 
@@ -111,7 +111,7 @@ This app may be executed as a standalone app.
 **Example**:
 
 ```bash
-dx run app-eggd_vcf2xls/2.0.0 \
+dx run eggd_generate_variant_workbook \
   -ivcfs="file-G70BB1j45jFpjkPJ2ZB10f47" \
   -ifilter="bcftools filter -e 'CSQ_gnomAD_AF>0.02 | CSQ_gnomADg_AF>0.02 | CSQ_Consequence=\"synonymous_variant\"'" \
   -itypes="CSQ_gnomADg_AF=Float" \

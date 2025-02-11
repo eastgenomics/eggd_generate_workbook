@@ -301,11 +301,12 @@ class excel():
         self.summary.cell(1, 1).value = "Sample ID:"
         self.summary.cell(4, 1).value = "Name"
         self.summary.cell(5, 1).value = "Clinical indication"
-        self.summary.cell(6, 1).value = "Additional comments"
+        self.summary.cell(6, 1).value = "Tumour %"
+        self.summary.cell(7, 1).value = "Adjusted Tumour %"
 
         self.summary.cell(9, 1).value = "Variant totals"
 
-        to_bold.extend(["A1", "A2", "A4", "A5", "A6", "A9"])
+        to_bold.extend(["A1", "A2", "A4", "A5", "A6", "A7", "A9"])
 
         # get sample name from vcf, should only be one but handle everything
         # list-wise just in case
