@@ -16,6 +16,8 @@ jobs:
         pip install pipenv codecov
         pip install -r requirements.txt
         pipenv install --dev
+        sudo apt update
+        sudo apt install libbz2-dev
     - name: Build bcftools
       run: |
         wget https://github.com/samtools/bcftools/releases/download/1.18/bcftools-1.18.tar.bz2
