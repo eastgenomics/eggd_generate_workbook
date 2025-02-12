@@ -201,7 +201,7 @@ n.b. the above link to cBioPortal defaults to the 'TCGA PanCancer Atlas Studies'
 
 ## What does this app output?
 
-This app outputs an Excel workbook and (optionally) the intermediate split and filtered vcfs.
+This app outputs an Excel workbook and (optionally) the intermediate .split.vcf.gz output from calling bcftools +split-vep and .filter.vcf.gz which has the EXCLUDE filter tag added to the FILTER field for variants filtered out by the provided bcftools command.
 
 This is the source code for an app that runs on the DNAnexus Platform.
 For more information about how to run or modify it, see
